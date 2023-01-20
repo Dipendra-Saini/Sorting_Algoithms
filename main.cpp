@@ -113,10 +113,10 @@ void Quick_sort(vector<int> &arr,int l,int r){
 void Count_sort(vector<int> &arr){
     int ma;
     for(int i=0;i<arr.size();i++){
-//        if(arr[i]>max){
+//        if(arr[i]>max){               // this is for simple if else condition and find max
 //            max = arr[i];
 //        }
-        ma = max(ma,arr[i]);
+        ma = max(ma,arr[i]);            // this si with inbuilt max() function for finding maximum
     }
     int count[10] = {0};
     for(int i=0;i<arr.size();i++){
